@@ -132,7 +132,7 @@ export default function Home() {
               />
               </InputRightElement>
             <Link px="10"w={["100%","400px"]} to={`/${data}`} target="_blank" bg="blue.50" color="blue.400" py="2" borderRadius="5" 
-           >{`https://shorturl-mkhembrom.vercel.app/${data}`}</Link>
+           >{`https://shorturl/${data}`}</Link>
             
              
           </InputGroup>
