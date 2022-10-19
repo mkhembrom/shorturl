@@ -48,7 +48,7 @@ export default function Home() {
       const res = await axios(config);
       console.log(res.data);
       setData(res.data);
-      setTextCopy('http://localhost:3000/' + res.data);
+      setTextCopy('https://shorturl-phi.vercel.app/' + res.data);
     
      } catch (err) {
       console.log(err.message);
