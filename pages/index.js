@@ -48,7 +48,7 @@ export default function Home() {
       const res = await axios(config);
       console.log(res.data);
       setData(res.data);
-      setTextCopy('https://shorturl-six-theta.vercel.app/' + res.data);
+      setTextCopy(res.data);
     
      } catch (err) {
       console.log(err.message);
@@ -131,8 +131,8 @@ export default function Home() {
                 onClick={handleCopyClick}
               />
               </InputRightElement>
-            <Link px="10"w={["100%","400px"]} href={`https://shorturl-six-theta.vercel.app/${data}`} target="_blank" bg="blue.50" color="blue.400" py="2" borderRadius="5" 
-           >{`https://shorturl-six-theta.vercel.app/${data}`}</Link>
+            <Link px="10"w={["100%","400px"]} to={`/${data}`} target="_blank" bg="blue.50" color="blue.400" py="2" borderRadius="5" 
+           >{`https://shorturl-mkhembrom.vercel.app/${data}`}</Link>
             
              
           </InputGroup>
